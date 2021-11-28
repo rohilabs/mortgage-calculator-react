@@ -6,7 +6,7 @@ export default class IconInput extends React.Component {
         return (
             <div className={styles.inputField}>
                 <div className={styles.inputIcon}>{icon}</div>
-                <input {...this.props} />
+                <input {...this.props} className={styles.inputBox} />
             </div>
         );
     }

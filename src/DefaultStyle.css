@@ -17,7 +17,7 @@
     padding: 0 0 1em 0;
 }
 
-:local(label) {
+:local(.labelText) {
     display: block;
     color: #777777;
 }
@@ -32,7 +32,7 @@
     color: var(--secondary-one-light);
 }
 
-:local(input) {
+:local(.inputBox) {
     width: 100%;
     text-indent: 1em;
     font-size: 16px;
@@ -46,7 +46,7 @@
     -moz-box-sizing: border-box;
 }
 
-:local(input:focus) {
+:local(.inputBox:focus) {
     border: 1px solid var(--primary-one);
 }
 
@@ -54,7 +54,7 @@
     padding: .1em 0 .1em 0;
 }
 
-:local(select) {
+:local(.selectBox) {
     width: 100%;
     padding: .7em;
     margin: 0 0 .2em 0;
@@ -99,7 +99,7 @@
     border-bottom: none;
 }
 
-:local(button) {
+:local(.advancedButtonText) {
     background-color: var(--secondary-one);
     border: none;
     color: white;

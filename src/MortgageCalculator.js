@@ -238,7 +238,7 @@ export default class MortgageCalculator extends React.Component {
 
 
                     <InputWrapper styles={styles} label="Loan Term">
-                        <select className="custom-select" name="termMonths" onInput={this.onTermMonthsChange} defaultValue={months}>
+                        <select className={styles.selectBox} name="termMonths" onInput={this.onTermMonthsChange} defaultValue={months}>
                             <option value="360">30 years</option>
                             <option value="240">20 years</option>
                             <option value="180">15 years</option>
@@ -254,7 +254,9 @@ export default class MortgageCalculator extends React.Component {
 
 
                     <div className={styles.advancedButton}>
-                        <button type="button" onClick={() => this.setState({showAdvanced: !showAdvanced})}>{showAdvanced ? "Hide" : "Show"} Advanced</button>
+                        <button type="button" onClick={() => this.setState({showAdvanced: !showAdvanced})}  className={styles.advancedButtonText}>
+                          {showAdvanced ? "Hide" : "Show"} Advanced
+                        </button>
                     </div>
                     {showAdvanced ? (
                         <div className={styles.advanced}>
