@@ -1,3 +1,5 @@
+Link to original repo: [mortgage-calculator-react](https://github.com/tommymcglynn/mortgage-calculator-react)
+
 # Mortgage Calculator React
 A simple mortgage calculator as a React component. Using [mortgage-js](https://github.com/tommymcglynn/mortgage-js) for payment calculations.
 
@@ -22,7 +24,7 @@ Install the calculator as an npm module.
 Then include the mortgage calculator in your app and use it as a React component.
 
     import MortgageCalculator from "mortgage-calculator-react";
-    
+
     const reactElement = (
         <div>
             <MortgageCalculator/>
@@ -31,9 +33,9 @@ Then include the mortgage calculator in your app and use it as a React component
 
 You can also override default props.
 
-    
+
     <MortgageCalculator price={125000} downPayment={10000} interestRate={0.065} months={120} additionalPrincipalPayment={100} taxRate={0.01} insuranceRate={0.01} mortgageInsuranceEnabled={false}  />
-    
+
 You can also show a full payment schedule.
 
     <MortgageCalculator showPaymentSchedule />
@@ -49,4 +51,3 @@ You can embed the mortgage calculator into any web page. Simply insert the follo
 
     <div id="mortgage-calculator-react"></div>
     <script src="https://www.fastforma.com/mortgage-calculator-react.js"></script>
-    
